@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Tests\Feature\AdminPanelTest" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" tests="24" assertions="0" errors="24" failures="0" skipped="0" time="0.000000">
+    <testcase name="admin_can_access_dashboard" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="40" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_access_dashboard&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Prof. Vicenta Lindgren, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, 8srJWCIMBd, super_admin, 1, ?, ?, +1-678-852-1273, At et natus nesciunt nihil accusantium., {"theme":"light","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-19 16:49:55, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="non_admin_cannot_access_admin_dashboard" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="51" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::non_admin_cannot_access_admin_dashboard&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Miss Reyna Hane V, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, 8KjdxLoUPj, super_admin, 1, ?, https://via.placeholder.com/200x200.png/002277?text=people+temporibus, 254-515-9581, ?, {"theme":"light","language":"en","notifications":{"email":true,"browser":true}}, 2025-09-26 03:59:49, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_view_tenants_list" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="60" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_view_tenants_list&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Theresa Parker, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, jsTBBpB5vs, super_admin, 1, ?, ?, (305) 566-4708, ?, {"theme":"light","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-17 03:54:36, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_create_new_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="74" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_create_new_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Prof. Lambert Jaskolski, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, TOGZqwRtVe, super_admin, 1, ?, ?, +1-763-662-8434, ?, {"theme":"light","language":"fr","notifications":{"email":true,"browser":true}}, 2025-10-02 13:08:39, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_view_specific_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="117" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_view_specific_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Hubert Sporer, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, ppz0hjiAA8, super_admin, 1, ?, https://via.placeholder.com/200x200.png/00bb77?text=people+dolore, ?, ?, {"theme":"light","language":"pt","notifications":{"email":true,"browser":true}}, 2025-10-07 16:25:58, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_update_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="132" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_update_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Nathanial Jenkins, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, Go1Ks15p4v, super_admin, 1, ?, ?, +1.585.695.0982, Nobis hic voluptate debitis perspiciatis quia., {"theme":"light","language":"pt","notifications":{"email":true,"browser":true}}, 2025-10-04 08:49:47, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_delete_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="158" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_delete_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Prof. Shemar Towne III, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, dqA4ZF6naF, super_admin, 1, ?, https://via.placeholder.com/200x200.png/0066dd?text=people+fugiat, ?, Hic quas veritatis deserunt et voluptas ea in., {"theme":"dark","language":"es","notifications":{"email":true,"browser":true}}, 2025-10-07 20:23:15, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_view_plans_list" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="170" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_view_plans_list&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Piper Miller, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, xzayUzD75d, super_admin, 1, ?, ?, +1 (956) 736-8601, Aspernatur odit distinctio enim dolorem illo ipsum., {"theme":"dark","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-17 10:43:59, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_create_new_plan" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="183" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_create_new_plan&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Jake Kautzer, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, tfoRIglGy7, super_admin, 1, ?, https://via.placeholder.com/200x200.png/001144?text=people+consequatur, +1 (254) 691-6111, At eveniet tempora deleniti quasi aliquid et., {"theme":"dark","language":"en","notifications":{"email":true,"browser":true}}, 2025-09-18 01:56:36, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_update_plan" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="215" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_update_plan&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Erwin Olson, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, K9HxUMjnrx, super_admin, 1, ?, https://via.placeholder.com/200x200.png/002277?text=people+ipsum, 351.506.3596, ?, {"theme":"light","language":"es","notifications":{"email":true,"browser":true}}, 2025-10-02 03:41:17, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_view_system_settings" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="240" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_view_system_settings&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Ethan Anderson I, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, Nde2DBbWvv, super_admin, 1, ?, https://via.placeholder.com/200x200.png/000099?text=people+veritatis, +13852347642, ?, {"theme":"dark","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-26 11:07:44, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_update_system_settings" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="251" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_update_system_settings&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Maude Ullrich Jr., admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, biQfjSHUSE, super_admin, 1, ?, ?, +1 (731) 978-7117, Tempore assumenda vitae earum officiis., {"theme":"dark","language":"en","notifications":{"email":true,"browser":true}}, 2025-09-09 14:55:25, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_test_email_configuration" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="269" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_test_email_configuration&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Myrtie Gorczany III, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, FB69QQmMi1, super_admin, 1, ?, ?, +1-661-290-8892, Distinctio veritatis autem et dolores., {"theme":"light","language":"pt","notifications":{"email":true,"browser":true}}, ?, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_clear_application_cache" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="281" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_clear_application_cache&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Prof. Shirley Koss, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, fHrFfif4mk, super_admin, 1, ?, https://via.placeholder.com/200x200.png/00ff66?text=people+odio, 224-521-6106, Similique repellat et a optio consequatur deserunt., {"theme":"light","language":"es","notifications":{"email":true,"browser":true}}, ?, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_get_system_information" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="291" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_get_system_information&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Demario Toy, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, xsHKfKHCqs, super_admin, 1, ?, ?, 332-753-9621, Voluptatibus debitis quaerat veniam veniam., {"theme":"light","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-30 22:45:34, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_activate_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="308" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_activate_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Darrel Mann DVM, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, DSJPFN8FNd, super_admin, 1, ?, ?, 1-530-928-4222, Temporibus aperiam reprehenderit enim., {"theme":"dark","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-18 19:29:47, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_deactivate_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="324" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_deactivate_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Geo Little, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, YlxJr37gAk, super_admin, 1, ?, ?, ?, Quia quam facilis omnis in aut omnis labore., {"theme":"dark","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-28 01:13:05, ?, 2025-10-08 22:40:03, 2025-10-08 22:40:03))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_reset_tenant_password" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="340" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_reset_tenant_password&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Melissa O'Hara, admin@example.com, 2025-10-08 22:40:03, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, KKOa6sC3Em, super_admin, 1, ?, ?, +1.559.657.3834, ?, {"theme":"light","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-13 08:43:43, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_login_as_tenant" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="361" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_login_as_tenant&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Mckenna Muller PhD, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, dT4Je5KKi1, super_admin, 1, ?, ?, +1.989.513.4375, Animi provident autem quia facilis., {"theme":"light","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-23 09:44:24, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_dashboard_shows_correct_statistics" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="377" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_dashboard_shows_correct_statistics&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Leila Lowe V, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, AgrxMBx0Tr, super_admin, 1, ?, https://via.placeholder.com/200x200.png/006611?text=people+deserunt, +1 (515) 293-9340, ?, {"theme":"dark","language":"pt","notifications":{"email":true,"browser":true}}, 2025-10-01 10:10:59, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_filter_tenants_by_status" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="400" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_filter_tenants_by_status&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Mr. Ismael O'Hara, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, JoiUbKHclU, super_admin, 1, ?, ?, ?, At ut voluptas consequuntur., {"theme":"light","language":"fr","notifications":{"email":true,"browser":true}}, 2025-09-28 23:51:05, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="admin_can_search_tenants" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="416" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::admin_can_search_tenants&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Lela Koepp, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, v40lpiAgJE, super_admin, 1, ?, https://via.placeholder.com/200x200.png/0022ff?text=people+reprehenderit, ?, ?, {"theme":"dark","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-26 10:35:17, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="unauthenticated_user_cannot_access_admin_panel" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="432" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::unauthenticated_user_cannot_access_admin_panel&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Dr. Frederick Schmidt, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, DbNKovkkIC, super_admin, 1, ?, https://via.placeholder.com/200x200.png/0066ee?text=people+beatae, (650) 592-4283, ?, {"theme":"dark","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-11 21:10:39, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+    <testcase name="tenant_user_cannot_access_admin_panel" file="C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php" line="439" class="Tests\Feature\AdminPanelTest" classname="Tests.Feature.AdminPanelTest" assertions="0" time="0.000000">
+      <error type="Illuminate\Database\QueryException">Tests\Feature\AdminPanelTest::tenant_user_cannot_access_admin_panel&#13;
+Illuminate\Database\QueryException: SQLSTATE[HY000]: General error: 1 table users has no column named role (Connection: sqlite, SQL: insert into "users" ("name", "email", "email_verified_at", "password", "remember_token", "role", "is_active", "permissions", "avatar", "phone", "bio", "preferences", "last_login_at", "api_token", "updated_at", "created_at") values (Kevon Aufderhar, admin@example.com, 2025-10-08 22:40:04, $2y$04$zPTYVarP3gAxjfj1qashuuj8uq7tpKICCJULnK.gguHV6pK8ZtF9q, aenyKEhR67, super_admin, 1, ?, ?, 763.846.6388, ?, {"theme":"light","language":"es","notifications":{"email":true,"browser":true}}, 2025-09-15 16:44:42, ?, 2025-10-08 22:40:04, 2025-10-08 22:40:04))
+&#13;
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:824
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:778
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:370
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php:271
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:365
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:321
+C:\xampp\htdocs\14440acconting\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php:315
+C:\xampp\htdocs\14440acconting\tests\Feature\AdminPanelTest.php:26</error>
+    </testcase>
+  </testsuite>
+</testsuites>
