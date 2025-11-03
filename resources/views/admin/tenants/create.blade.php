@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const name = this.value;
         const domain = name.toLowerCase()
             .replace(/[^a-z0-9]/g, '')
-            .substring(0, 20) + '.localhost:8000';
+            .substring(0, 20) + '.website-1440accounting.tarfvp.easypanel.host';
         domainInput.value = domain;
     });
 

@@ -50,7 +50,8 @@ class CreateTenantDatabase extends Command
                 throw new \Exception("Database manager não encontrado para o tipo: {$databaseType}");
             }
             
-            $databaseManager = app($managerClass);
+            // Usar o DatabaseManager compatível com a Job
+            $databaseManager = app(\Stancl\Tenancy\Database\DatabaseManager::class);
 
             // Criar o banco de dados
             $createDatabaseJob = new CreateDatabase($tenant);

@@ -224,42 +224,35 @@ class TenantController extends Controller
                     'tenant_id' => $tenant->id,
                     'database' => $tenant->database
                 ]);
-
-                // Obter o DatabaseManager correto baseado no tipo de banco
-                $databaseType = config('database.default');
-                $managerClass = config("tenancy.database.managers.{$databaseType}");
-                
-                if (!$managerClass) {
-                    throw new \Exception("Database manager não encontrado para o tipo: {$databaseType}");
-                }
-                
-                $databaseManager = app($managerClass);
-
+            
+                // Obter o DatabaseManager correto (compatível com CreateDatabase::handle)
+                $databaseManager = app(\Stancl\Tenancy\Database\DatabaseManager::class);
+            
                 // Criar o banco de dados
                 $createDatabaseJob = new CreateDatabase($tenant);
                 $createDatabaseJob->handle($databaseManager);
-
+            
                 \Log::info('Tenant database created successfully', [
                     'tenant_id' => $tenant->id,
                     'database' => $tenant->database
                 ]);
-
+            
                 // Executar migrations
                 $migrateDatabaseJob = new MigrateDatabase($tenant);
                 $migrateDatabaseJob->handle();
-
+            
                 \Log::info('Tenant database migrations completed', [
                     'tenant_id' => $tenant->id
                 ]);
-
+            
                 // Criar o usuário principal no banco do tenant
                 $this->createTenantUser($tenant, $user);
-
+            
                 \Log::info('Tenant user created in tenant database', [
                     'tenant_id' => $tenant->id,
                     'user_id' => $user->id
                 ]);
-
+            
             } catch (\Exception $dbException) {
                 \Log::error('Error creating tenant database or user', [
                     'tenant_id' => $tenant->id,
